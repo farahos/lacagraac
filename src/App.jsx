@@ -27,7 +27,7 @@ export default function App() {
             <ul>
               <li>
                 <strong>Account Information:</strong> such as your name, email address,
-                phone number, and password.
+                phone number, and login information.
               </li>
               <li>
                 <strong>Business and Customer Records:</strong> such as customer names,
