@@ -53,7 +53,7 @@ export default function App() {
 
             <h1>
               LacagRaac
-              <span>App-ka deynta ee fudud oo casri ah</span>
+              <span>App-ka deynta oo fudud oo casri ah</span>
             </h1>
 
             <p className="lead">
