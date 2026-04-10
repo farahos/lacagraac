@@ -26,8 +26,8 @@ export default function App() {
             <p>Depending on how you use the app, we may collect the following information:</p>
             <ul>
               <li>
-                <strong>Account Information:</strong> such as your name, phone number, email
-                address, username, and login details.
+                <strong>Account Information:</strong> such as your name, phone number,
+                username, and login details.
               </li>
               <li>
                 <strong>Business and Customer Records:</strong> such as customer names,
