@@ -20,7 +20,7 @@ const features = [
   },
   {
     title: "Si Fudud U Rakib",
-    text: "APK-ga hal mar soo degso kadibna si toos ah ugu rakib Android-kaaga.",
+    text: "APK-ga hal mar soo degso kadibna si toos ah ugu shubo mobile-kaaga.",
     tone: "amber",
     icon: PhoneIcon,
   },
@@ -46,10 +46,10 @@ export default function App() {
       <main>
         <section className="hero-layout">
           <div className="hero-copy">
-            <div className="pill">
+            {/* <div className="pill">
               <PhoneIcon />
               App-ka Android-ka waa diyaar
-            </div>
+            </div> */}
 
             <h1>
               LacagRaac
@@ -66,7 +66,7 @@ export default function App() {
             <div className="cta-row">
               <a className="download-btn" href="/downloads/app-release.apk" download>
                 <DownloadIcon />
-                Soo dejiso APK
+                Dagso Hadda
               </a>
               <a className="ghost-btn" href="#plans">
                 Arag Plans-ka
@@ -114,14 +114,14 @@ export default function App() {
                 ))}
               </div>
 
-              <div className="install-note">
+              {/* <div className="install-note">
                 <p className="install-title">Fiiro Gaar Ah</p>
                 <p>
                   Haddii Android-ku kuu sheego in app-kan aanu ka imaan Play Store,
                   fur <strong>Install unknown apps</strong> ama <strong>Unknown sources</strong>,
                   kadibna sii wad rakibidda.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
