@@ -1,30 +1,41 @@
 const highlights = [
-  "Manage customer debts in one place",
-  "Add debts and payments quickly",
-  "Access everything from mobile and web anytime",
-  "Keep your data secure and easy to manage",
+  "Ku maamul deynta macaamiisha hal meel gudaheeda",
+  "Si degdeg ah ugu dar deyn iyo lacag-bixin cusub",
+  "Ka gal mobilka ama webka meel kasta oo aad joogto",
+  "Xogtaada si ammaan ah u keydi oo si fudud u raadso",
 ];
 
-const stats = [
+const features = [
   {
-    title: "Secure Login",
-    text: "Each user can sign in with their own account.",
+    title: "Galitaan Ammaan ah",
+    text: "Qof kasta wuxuu ku geli karaa akoonkiisa si xogta loo ilaaliyo.",
     tone: "emerald",
     icon: ShieldIcon,
   },
   {
-    title: "Live Data",
-    text: "Web and mobile share the same backend and data.",
+    title: "Xog Toos ah",
+    text: "Mobile-ka iyo webku waxay wadaagaan xog isku mid ah isla markiiba.",
     tone: "sky",
     icon: CloudIcon,
   },
   {
-    title: "Ready To Install",
-    text: "Download the APK in one click and install it right away.",
+    title: "Si Fudud U Rakib",
+    text: "APK-ga hal mar soo degso kadibna si toos ah ugu rakib Android-kaaga.",
     tone: "amber",
     icon: PhoneIcon,
   },
 ];
+
+const plans = [
+  { key: "1m", title: "1 Bile", price: 3, savePercentage: 0 },
+  { key: "3m", title: "3 Bile", price: 8, savePercentage: 11 },
+  { key: "6m", title: "6 Bile", price: 12, savePercentage: 33 },
+  { key: "12m", title: "12 Bile", price: 18, savePercentage: 50 },
+  { key: "24m", title: "2 Sano", price: 20, savePercentage: 72 },
+];
+
+const whatsappPhone = "252619964951";
+const supportPhone = "619964951";
 
 export default function App() {
   return (
@@ -32,82 +43,163 @@ export default function App() {
       <div className="page-glow page-glow-one" />
       <div className="page-glow page-glow-two" />
 
-      <main className="hero-layout">
-        <section className="hero-copy">
-          <div className="pill">
-            <PhoneIcon />
-            Android app is ready
-          </div>
+      <main>
+        <section className="hero-layout">
+          <div className="hero-copy">
+            <div className="pill">
+              <PhoneIcon />
+              App-ka Android-ka waa diyaar
+            </div>
 
-          <h1>
-            LacagRaac App
-            <span>Ku rakib hal click oo keliya</span>
-          </h1>
+            <h1>
+              LacagRaac
+              <span>App-ka deynta ee fudud oo casri ah</span>
+            </h1>
 
-          <p className="lead">
-            Landing page-kan waxaa loogu talagalay in macaamiisha ama shaqaalaha ay si degdeg
-            ah ugu soo dejiyaan Android app-ka, kadibna uga maareeyaan deymaha, lacag-bixinta,
-            iyo xogta macaamiisha meel kasta.
-          </p>
+            <p className="lead">
+              LacagRaac wuxuu kaa caawinayaa inaad si sahlan u maamusho deymaha,
+              lacag-bixinnada, iyo xogta macaamiisha. Haddii aad tahay ganacsade ama
+              shaqaale, waxaad xogta ka heli kartaa meel kasta adigoo isticmaalaya mobile
+              ama web.
+            </p>
 
-          <div className="cta-row">
-            <a className="download-btn" href="/downloads/app-release.apk" download>
-              <DownloadIcon />
-              Download APK
-            </a>
-          </div>
-
-          <div className="highlights-grid">
-            {highlights.map((item) => (
-              <article className="highlight-card" key={item}>
-                <CheckIcon />
-                <p>{item}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className="hero-panel">
-          <div className="device-card">
-            <div className="device-overlay" />
-
-            <div className="device-top card-surface">
-              <div>
-                <p className="eyebrow">Mobile Version</p>
-                <h2>Debt Management App</h2>
-              </div>
-              <div className="icon-badge">
+            <div className="cta-row">
+              <a className="download-btn" href="/downloads/app-release.apk" download>
                 <DownloadIcon />
-              </div>
+                Soo dejiso APK
+              </a>
+              <a className="ghost-btn" href="#plans">
+                Arag Plans-ka
+              </a>
             </div>
 
-            <div className="card-surface intro-card">
-              <p>
-                This APK is built for Android so you can manage customers, debts, payments,
-                and transaction updates with ease.
-              </p>
-            </div>
-
-            <div className="feature-grid">
-              {stats.map(({ title, text, icon: Icon, tone }) => (
-                <article className={`mini-card ${tone}`} key={title}>
-                  <Icon />
-                  <h3>{title}</h3>
-                  <p>{text}</p>
+            <div className="highlights-grid">
+              {highlights.map((item) => (
+                <article className="highlight-card" key={item}>
+                  <CheckIcon />
+                  <p>{item}</p>
                 </article>
               ))}
             </div>
+          </div>
 
-            <div className="install-note">
-              <p className="install-title">Install Notes</p>
-              <p>
-                If Android tells you the app was not downloaded from the Play Store, enable
-                <strong> Install unknown apps </strong>
-                and continue with the installation.
-              </p>
+          <div className="hero-panel">
+            <div className="device-card">
+              <div className="device-overlay" />
+
+              <div className="device-top card-surface">
+                <div>
+                  <p className="eyebrow">Nooca Mobile-ka</p>
+                  <h2>Maamulka Deynta iyo Lacag-bixinta</h2>
+                </div>
+                <div className="icon-badge">
+                  <DownloadIcon />
+                </div>
+              </div>
+
+              <div className="card-surface intro-card">
+                <p>
+                  APK-kan waxaa loo dhisay Android si aad ugu maamusho macaamiisha,
+                  deymaha, lacag-bixinta, iyo dhaqdhaqaaqyada maalinlaha ah si degdeg ah.
+                </p>
+              </div>
+
+              <div className="feature-grid">
+                {features.map(({ title, text, icon: Icon, tone }) => (
+                  <article className={`mini-card ${tone}`} key={title}>
+                    <Icon />
+                    <h3>{title}</h3>
+                    <p>{text}</p>
+                  </article>
+                ))}
+              </div>
+
+              <div className="install-note">
+                <p className="install-title">Fiiro Gaar Ah</p>
+                <p>
+                  Haddii Android-ku kuu sheego in app-kan aanu ka imaan Play Store,
+                  fur <strong>Install unknown apps</strong> ama <strong>Unknown sources</strong>,
+                  kadibna sii wad rakibidda.
+                </p>
+              </div>
             </div>
           </div>
         </section>
+
+        <section className="plans-section" id="plans">
+          <div className="section-head">
+            <span className="section-tag">Plans</span>
+            <h2>Dooro plan-ka kugu habboon</h2>
+            <p>
+              Isticmaal mid ka mid ah qorshayaashan si aad u sii waddo adeegga LacagRaac.
+              Haddii aad rabto inaad iibsato plan, waxaad si toos ah uga wici kartaa ama
+              WhatsApp uga la xiriiri kartaa support-ka.
+            </p>
+          </div>
+
+          <div className="plans-grid">
+            {plans.map((plan) => {
+              const whatsappLink = `https://wa.me/${whatsappPhone}?text=${encodeURIComponent(
+                `Asc, waxaan rabaa plan ${plan.title} ee LacagRaac.`
+              )}`;
+              const dialerLink = `tel:*712*${supportPhone}*${String(plan.price)}#`;
+
+              return (
+                <article className="plan-card" key={plan.key}>
+                  <div className="plan-top">
+                    <div>
+                      <h3>{plan.title}</h3>
+                      <p>
+                        {plan.savePercentage === 0
+                          ? "Kayd ma leh"
+                          : `Waxaad kaydsanaysaa ${plan.savePercentage}%`}
+                      </p>
+                    </div>
+                    <strong>${plan.price}</strong>
+                  </div>
+
+                  <div className="plan-note">
+                    Plan-kan wuxuu ku habboon yahay ganacsiyada doonaya adeeg deggan,
+                    fudud, oo la isku halayn karo.
+                  </div>
+
+                  <div className="plan-actions">
+                    <a className="plan-btn filled" href={dialerLink}>
+                      <CallIcon />
+                      Gado Plan
+                    </a>
+                    <a className="plan-btn outline" href={whatsappLink} target="_blank" rel="noreferrer">
+                      <ChatIcon />
+                      La xiriir WhatsApp
+                    </a>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+
+        <footer className="site-footer">
+          <div className="footer-brand">
+            <h3>LacagRaac</h3>
+            <p>
+              App casri ah oo kaa caawinaya maamulka deynta, lacag-bixinta, iyo xogta
+              macaamiisha si fudud oo ammaan ah.
+            </p>
+          </div>
+
+          <div className="footer-links">
+            <a href="/downloads/app-release.apk" download>
+              Soo dejiso APK
+            </a>
+            <a href={`https://wa.me/${whatsappPhone}`} target="_blank" rel="noreferrer">
+              WhatsApp Support
+            </a>
+            <a href={`tel:${supportPhone}`}>Wac Support</a>
+          </div>
+
+          <p className="footer-copy">© 2026 LacagRaac. Dhammaan xuquuqdu way dhowran tahay.</p>
+        </footer>
       </main>
     </div>
   );
@@ -150,6 +242,22 @@ function CheckIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-1.1 14.5-4-4 1.4-1.4 2.6 2.6 5-5 1.4 1.4Z" />
+    </svg>
+  );
+}
+
+function CallIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.2.56 3.4.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.2.2 2.3.56 3.4a1 1 0 0 1-.24 1l-2.2 2.4Z" />
+    </svg>
+  );
+}
+
+function ChatIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v7A2.5 2.5 0 0 1 17.5 15H9l-4.5 4v-4.2A2.5 2.5 0 0 1 4 12.5v-7Z" />
     </svg>
   );
 }
