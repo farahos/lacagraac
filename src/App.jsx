@@ -190,7 +190,7 @@ export default function App() {
 
           <div className="footer-links">
             <a href="/downloads/app-release.apk" download>
-              Soo dejiso APK
+              Dagso Hadda
             </a>
             <a href={`https://wa.me/${whatsappPhone}`} target="_blank" rel="noreferrer">
               WhatsApp Support
@@ -198,7 +198,7 @@ export default function App() {
             <a href={`tel:${supportPhone}`}>Wac Support</a>
           </div>
 
-          <p className="footer-copy">© 2026 LacagRaac. Dhammaan xuquuqdu way dhowran tahay.</p>
+          <p className="footer-copy">ï¿½ 2026 LacagRaac. Dhammaan xuquuqdu way dhowran tahay.</p>
         </footer>
       </main>
     </div>
