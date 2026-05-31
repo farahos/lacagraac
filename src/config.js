@@ -1,5 +1,5 @@
 export const appConfig = {
-  appName: "LacagRaac",
+  appName: "DeynRaac",
   tagline: "App-ka deynta oo fudud oo casri ah",
   apk: {
     version: "v1.0.0",
