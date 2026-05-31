@@ -1,3 +1,4 @@
+import React from "react";
 import { appConfig } from "./config";
 
 const { appName } = appConfig;
@@ -13,13 +14,16 @@ export default function App() {
         <section className="policy-card">
           <p className="policy-badge">Google Play Privacy Policy</p>
           <h1 className="policy-title">{appName} Privacy Policy</h1>
-          <p className="policy-date">Last Updated: April 10, 2026</p>
-
+          <p className="policy-date">Last Updated: May 31, 2026</p>
+          <p className="policy-lead">
+            DeynRaac is developed and operated by EXPRESS TECH.
+          </p>
           <p className="policy-lead">
             This Privacy Policy explains how {appName} collects, uses, stores, and shares
             information when you use our mobile application and related services. By using
             the app, you agree to the practices described in this policy.
           </p>
+
 
           <section className="policy-section">
             <h2>1. Information We Collect</h2>
@@ -134,6 +138,9 @@ export default function App() {
 
           <section className="policy-section policy-contact">
             <h2>10. Contact Us</h2>
+            <p className="policy-lead">
+              DeynRaac is developed and operated by EXPRESS TECH.
+            </p>
             <p>
               If you have any questions, requests, or concerns about this Privacy Policy or how
               data is handled, please contact us:
