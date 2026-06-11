@@ -14,7 +14,7 @@ export default function App() {
         <section className="policy-card">
           <p className="policy-badge">Google Play Privacy Policy</p>
           <h1 className="policy-title">{appName} Privacy Policy</h1>
-          <p className="policy-date">Last Updated: May 31, 2026</p>
+          <p className="policy-date">Last Updated: June 11, 2026</p>
           <p className="policy-lead">
             DeynRaac is developed and operated by EXPRESS TECH.
           </p>
@@ -48,7 +48,28 @@ export default function App() {
               </li>
             </ul>
           </section>
-
+          <section className="policy-section">
+            <h2>1.1 SMS Permissions and Payment Processing</h2>
+            <p>
+              DeynRaac may request SMS permissions, including READ_SMS and RECEIVE_SMS,
+              to automatically detect and process supported payment confirmation messages.
+            </p>
+            <p>SMS access is used only for:</p>
+            <ul>
+              <li>Identifying payment transactions</li>
+              <li>Recording customer payments</li>
+              <li>Updating customer debt balances</li>
+              <li>Reducing manual data entry</li>
+            </ul>
+            <p>
+              DeynRaac does not sell SMS data, use SMS content for advertising, or share
+              SMS content with third parties except when required by law.
+            </p>
+            <p>
+              SMS data is processed only for the debt management and payment tracking
+              features provided by the application.
+            </p>
+          </section>
           <section className="policy-section">
             <h2>2. How We Use Information</h2>
             <ul>
