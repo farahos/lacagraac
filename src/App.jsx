@@ -71,6 +71,20 @@ export default function App() {
             </p>
           </section>
           <section className="policy-section">
+            <h2>1.2 Phone Call Permission</h2>
+            <p>
+              DeynRaac may request phone call permission to allow users to directly call
+              customers from inside the app.
+            </p>
+            <p>
+              This permission is used only to help business owners quickly contact customers
+              for payment follow-up, support, or account updates.
+            </p>
+            <p>
+              DeynRaac does not collect, store, read, or share call logs.
+            </p>
+          </section>
+          <section className="policy-section">
             <h2>2. How We Use Information</h2>
             <ul>
               <li>To create and manage your account.</li>
@@ -78,6 +92,8 @@ export default function App() {
               <li>To improve app performance, reliability, and security.</li>
               <li>To respond to support requests and communicate important service updates.</li>
               <li>To detect, prevent, and investigate fraud, abuse, or unauthorized access.</li>
+              <li>To automatically detect supported payment confirmation SMS messages and record payment information.</li>
+              <li>To allow users to directly call customers from inside the app for payment follow-up and support.</li>
               <li>To comply with legal obligations where applicable.</li>
             </ul>
           </section>
